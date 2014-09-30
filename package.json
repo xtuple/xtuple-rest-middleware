@@ -1,6 +1,6 @@
 {
   "name": "xtuple-rest-middleware",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "xTuple REST middleware",
   "main": "index.js",
   "scripts": {
