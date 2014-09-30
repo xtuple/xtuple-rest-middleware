@@ -12,7 +12,7 @@ $ npm install xtuple-rest-middleware --save
 
 ## Usage
 ```js
-app.use(require('xtuple-rest-middleware'));
+app.use('/api/v1/rest/*', require('xtuple-rest-middleware'));
 ```
 
 ## License
