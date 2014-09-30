@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = function (app, prefix) {
-  app.post(prefix, require('./lib/routes/create'));
-  app.get(prefix, require('./lib/routes/read'));
-  app.put(prefix, require('./lib/routes/update'));
-  app.delete(prefix, require('./lib/routes/delete'));
+  app.post(prefix + '/:model',       require('./lib/routes/create'));
+  app.get(prefix + '/:model/:id?',   require('./lib/routes/read'));
+  app.put(prefix + '/:model/:id',    require('./lib/routes/update'));
+  app.delete(prefix + '/:model/:id', require('./lib/routes/delete'));
 };
