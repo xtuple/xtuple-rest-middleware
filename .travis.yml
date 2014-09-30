@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: e5fbTyqV0NW0DEaCYlw5pOCbgRgKYowvxo6Nb5QnYIqHD4rPkOsWNZz4h+zFx3ytFrEKsP/f4xFQzMST99OrcOxdS8ogo13yn6dk76Xz2McNxUUgX4WgJJ3jhFvKSSsdX9SW314HWvj1GLX2MrQr3hBkNlIshasAFmu53s/uofY=
+  on:
+    tags: true
+    repo: tjwebb/xtuple-rest-middleware
+    all_branches: true
